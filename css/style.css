@@ -4,6 +4,17 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 24px 0px 24px;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: "ClashDisplay-Light";
   src: url("../fonts/ClashDisplay-Light.woff2") format("woff2"), url("../fonts/ClashDisplay-Light.woff") format("woff"), url("../fonts/ClashDisplay-Light.ttf") format("truetype");
@@ -16,4 +27,106 @@
   src: local("Satoshi Light"), local("Satoshi-Light"), url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff"), url("../fonts/Satoshi-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 20px 0px;
+  align-items: center;
+  font-family: "ClashDisplay-Light";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.basket-and-profil {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "Satoshi", sans-serif;
+  gap: 44px;
+  padding: 20px;
+  color: #726E8D;
+}
+
+.hero__container {
+  padding: 60px 30px 60px 30px;
+  display: flex;
+  width: 100%;
+}
+.hero__container__left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  background: #2A254B;
+  color: #fff;
+  padding: 60px 20px 60px 60px;
+}
+.hero__container__left-side__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 40px;
+}
+.hero__img {
+  width: 100%;
+}
+.hero-title {
+  font-family: "ClashDisplay-Light";
+  max-width: 500px;
+  font-size: 32px;
+}
+.hero__description {
+  display: block;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-family: "Satoshi", sans-serif;
+  font-size: 18px;
+}
+.hero__button {
+  border: none;
+  padding: 16px 32px;
+  background: rgba(249, 249, 249, 0.15);
+  color: #fff;
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+  .hero__container {
+    padding: 60px 30px 60px 30px;
+    display: flex;
+    width: 100%;
+  }
+  .hero__container__left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    background: #2A254B;
+    color: #fff;
+    padding: 40px 20px 40px 40px;
+  }
+  .hero__container__left-side__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 40px;
+  }
+  .hero__img {
+    width: 290px;
+  }
 }/*# sourceMappingURL=style.css.map */
