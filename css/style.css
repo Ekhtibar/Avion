@@ -36,6 +36,9 @@ a {
   font-family: "ClashDisplay-Light";
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+.header__icons {
+  width: 22px;
+}
 
 .logo {
   display: flex;
@@ -46,6 +49,10 @@ a {
 .basket-and-profil {
   display: flex;
   gap: 15px;
+}
+
+.menu-button {
+  display: none;
 }
 
 .navbar {
@@ -68,6 +75,38 @@ a {
 @media (max-width: 768px) {
   .navbar {
     gap: 20px;
+  }
+}
+@media (max-width: 648px) {
+  .basket,
+  .profil {
+    display: none;
+  }
+  .logo {
+    order: 1;
+  }
+  .search-box {
+    order: 2;
+    display: flex;
+    gap: 15px;
+  }
+  .menu-button {
+    order: 3;
+    display: flex;
+    width: 22px;
+  }
+  .navbar {
+    padding: 20px 120px 20px 50px;
+    background: rgba(0, 0, 0, 0.9490196078);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translateX(-120%);
+    transition: 300ms;
+    border-bottom-right-radius: 20px;
+  }
+  .menu-active {
+    transform: translateX(-20%);
   }
 }
 .hero__container {
