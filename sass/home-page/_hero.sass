@@ -66,9 +66,10 @@
             font-size: 24px
         &__description
             display: flex
-            flex-direction: column-reverse
+            flex-direction: column
             justify-content: start
             align-items: start
+            margin-top: 80px
             &__text
                 font-family: 'Satoshi', sans-serif
                 font-size: 16px
@@ -81,48 +82,39 @@
             font-size: 16px
             margin-bottom: 20px
             cursor: pointer
-@media (max-width: 648px)
+@media (max-width: 600px)
     .hero
         &__container
             padding: 30px 30px 30px 30px
+            &__left-side
+                padding: 30px 20px 30px 30px
+        &__description
+            margin-top: 0px
+            &__text
+                display: none
+                font-size: 20px
         &__img
             width: 200px
+            display: flex
+            
 
 @media (max-width: 480px)
     .hero
-        &-title
-            font-size: 18px
+        &__container
+            padding: 30px 0px 30px 0px
+            &__left-side
+                &__top
+                    &-title
+                        font-size: 18px
         &__description
             display: flex
-            flex-direction: column
-            &__text
-                display: none
-        &__img
-            width: 170px
-        &__button
-            padding: 10px 15px
-            font-size: 14px
-            margin-bottom: 0px
-@media (max-width: 420px)
-    .hero
-        &-title
-            font-size: 18px
-        &__description
-            display: flex
-            justify-content: center
-            align-content: center
+            margin-top: 100px
             &__text
                 display: flex
-                margin-top: 75px
-        &__img
-            display: none
         &__button
             width: 100%
-            padding: 10px 15px
-            font-size: 14px
             text-align: center
-@media (max-width: 360px)
-    .hero
-        &__container
-            &__left-side
-                padding: 20px 20px 40px 20px
+        &__img
+            display: none
+                    
+            
