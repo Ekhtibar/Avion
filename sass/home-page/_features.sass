@@ -1,0 +1,36 @@
+.features
+    padding: 60px 0px 60px 0px
+    &__title
+        font-family: 'ClashDisplay-Light', sans-serif
+        font-size: 24px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 50px
+    &__wrap
+        width: 100%
+        display: flex
+        justify-content: space-between
+        gap: 55px
+        &__block
+            &__title
+                font-family: 'ClashDisplay-Light', sans-serif
+                font-size: 20px
+                margin-top: 15px
+            &__description
+                font-family: 'Satoshi', sans-serif
+                font-size: 16px
+                margin-top: 8px
+
+
+@media (max-width: 768px)
+    .features
+        &__title
+        &__wrap
+            display: grid
+            grid-template-columns: 1fr 1fr
+
+@media (max-width: 360px)
+    .features
+        &__wrap
+            grid-template-columns: 1fr

@@ -292,4 +292,43 @@ a {
   .hero__img {
     display: none;
   }
+}
+.features {
+  padding: 60px 0px 60px 0px;
+}
+.features__title {
+  font-family: "ClashDisplay-Light", sans-serif;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.features__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 55px;
+}
+.features__wrap__block__title {
+  font-family: "ClashDisplay-Light", sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.features__wrap__block__description {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .features__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 360px) {
+  .features__wrap {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=style.css.map */
