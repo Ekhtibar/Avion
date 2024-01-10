@@ -331,4 +331,64 @@ a {
   .features__wrap {
     grid-template-columns: 1fr;
   }
+}
+.listing__one {
+  padding: 80px 0px 80px 0px;
+}
+.listing__one__products-wrap {
+  display: flex;
+  gap: 20px;
+}
+.listing__one__products-wrap__product-card {
+  width: 100%;
+}
+
+.product__card__img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.product__card__title {
+  font-family: "Satoshi", sans-serif;
+  font-size: 20px;
+}
+.product__card__price {
+  font-family: "Satoshi", sans-serif;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.section-title {
+  font-family: "ClashDisplay-Light";
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .listing__one {
+    padding: 50px 0px 50px 0px;
+  }
+  .listing__one__products-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .listing__one__products-wrap__product-card {
+    width: 100%;
+  }
+}
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product__card__img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.product__card__title {
+  font-family: "Satoshi", sans-serif;
+  font-size: 18px;
+}
+.product__card__price {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

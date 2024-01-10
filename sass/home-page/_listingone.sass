@@ -1,0 +1,48 @@
+.listing
+    &__one
+        padding: 80px 0px 80px 0px
+        &__products-wrap
+            display: flex
+            gap: 20px
+            &__product-card
+                width: 100%
+.product__card
+    &__img
+        width: 100%
+        margin-bottom: 25px
+    &__title
+        font-family: 'Satoshi', sans-serif
+        font-size: 20px
+    &__price
+        font-family: 'Satoshi', sans-serif
+        font-size: 18px
+        margin-top: 5px
+.section-title
+    font-family: 'ClashDisplay-Light'
+    font-size: 32px
+    margin-bottom: 30px
+
+
+@media (max-width: 768px)
+    .listing
+        &__one
+            padding: 50px 0px 50px 0px
+            &__products-wrap
+                display: grid
+                grid-template-columns: 1fr 1fr
+                &__product-card
+                    width: 100%
+@media (max-width: 360px)
+.section-title
+    font-size: 24px
+    margin-bottom: 20px
+.product__card
+    &__img
+        width: 100%
+        margin-bottom: 15px
+    &__title
+        font-family: 'Satoshi', sans-serif
+        font-size: 18px
+    &__price
+        font-family: 'Satoshi', sans-serif
+        font-size: 16px
