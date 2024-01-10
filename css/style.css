@@ -297,7 +297,7 @@ a {
   padding: 60px 0px 60px 0px;
 }
 .features__title {
-  font-family: "ClashDisplay-Light", sans-serif;
+  font-family: "ClashDisplay-Light";
   font-size: 24px;
   display: flex;
   justify-content: center;
@@ -311,7 +311,7 @@ a {
   gap: 55px;
 }
 .features__wrap__block__title {
-  font-family: "ClashDisplay-Light", sans-serif;
+  font-family: "ClashDisplay-Light";
   font-size: 20px;
   margin-top: 15px;
 }
