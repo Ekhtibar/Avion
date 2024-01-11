@@ -397,10 +397,10 @@ a {
   display: flex;
   gap: 20px;
   padding: 20px 0px 20px 0px;
+  overflow-x: scroll;
 }
 
 .slider-box {
-  overflow-x: scroll;
   scroll-snap-type: mandatory;
   display: flex;
   gap: 20px;
