@@ -414,6 +414,12 @@ a {
   scroll-behavior: auto;
 }
 
+.carousel__product-card {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .carousel__product-card__img {
   width: 100%;
 }

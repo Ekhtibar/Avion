@@ -16,7 +16,9 @@
 .carousel.dragging{
     scroll-behavior: auto;
 }
-
+.carousel__product-card{
+    user-select: none;
+}
 .carousel__product-card__img{
     width: 100%;
 }
