@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Avion</title>
 </head>
@@ -134,37 +135,72 @@
         </div>
     </section>
     <section class="container" id="slider">
-        <div class="slider">
-            <div class="slider-box" id="sliderBox">
-                <div class="listing__one__products-wrap__product-card slider_card">
-                    <a href="#" id="product-link"><img src="./images/prod4.png" class="product__card__img"></a>
-                    <a href="#" id="product-link"><p class="product__card__title">The Dandy chair</p></a>
-                    <p class="product__card__price">£250</p>
-                </div>
-                <div class="listing__one__products-wrap__product-card slider_card">
-                    <a href="#" id="product-link"><img src="./images/prod4.png" class="product__card__img"></a>
-                    <a href="#" id="product-link"><p class="product__card__title">The Dandy chair</p></a>
-                    <p class="product__card__price">£250</p>
-                </div>
-                <div class="listing__one__products-wrap__product-card slider_card">
-                    <a href="#" id="product-link"><img src="./images/prod4.png" class="product__card__img"></a>
-                    <a href="#" id="product-link"><p class="product__card__title">The Dandy chair</p></a>
-                    <p class="product__card__price">£250</p>
-                </div>
-                <div class="listing__one__products-wrap__product-card slider_card">
-                    <a href="#" id="product-link"><img src="./images/prod4.png" class="product__card__img"></a>
-                    <a href="#" id="product-link"><p class="product__card__title">The Dandy chair</p></a>
-                    <p class="product__card__price">£250</p>
-                </div>
-                <div class="listing__one__products-wrap__product-card slider_card">
-                    <a href="#" id="product-link"><img src="./images/prod4.png" class="product__card__img"></a>
-                    <a href="#" id="product-link"><p class="product__card__title">The Dandy chair</p></a>
-                    <p class="product__card__price">£250</p>
-                </div>
-            </div>
+        <p class="section-title">New ceramics</p>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="carousel__product-card">
+                    <div>
+                        <a href="#" class="pruduct-link">
+                            <img src="./images/prod1.png" alt="" draggable="false" class="carousel__product-card__img">
+                        </a>
+                    </div>
+                    <a href="#" class="product-link">
+                        <p class="carousel__product-card__title">The Poplar suede sofa</p>
+                    </a>
+                    <p class="carousel__product-card__price">£980</p>
+                </li>
+                <li class="carousel__product-card">
+                    <a href="#" class="pruduct-link">
+                        <img src="./images/prod6.png" alt="" draggable="false" class="carousel__product-card__img">
+                    </a>
+                    <a href="#" class="product-link">
+                        <p class="carousel__product-card__title">The Dandy chair</p>
+                    </a>
+                    <p class="carousel__product-card__price">£250</p>
+                </li>
+                <li class="carousel__product-card">
+                    <a href="#" class="pruduct-link">
+                        <img src="./images/prod3.png" alt="" draggable="false" class="carousel__product-card__img">
+                    </a>
+                    <a href="#" class="product-link">
+                        <p class="carousel__product-card__title">The Dandy chair</p>
+                    </a>
+                    <p class="carousel__product-card__price">£250</p>
+                </li>
+                <li class="carousel__product-card">
+                    <a href="#" class="pruduct-link">
+                        <img src="./images/prod4.png" alt="" draggable="false" class="carousel__product-card__img">
+                    </a>
+                    <a href="#" class="product-link">
+                        <p class="carousel__product-card__title">Hello</p>
+                    </a>
+                    <p class="carousel__product-card__price">720</p>
+                </li>
+                <li class="carousel__product-card">
+                    <a href="#" class="pruduct-link">
+                        <img src="./images/prod2.png" alt="" draggable="false" class="carousel__product-card__img">
+                    </a>
+                    <a href="#" class="product-link">
+                        <p class="carousel__product-card__title">Hello</p>
+                    </a>
+                    <p class="carousel__product-card__price">720</p>
+                </li>
+                <li class="carousel__product-card">
+                    <a href="#" class="pruduct-link">
+                        <img src="./images/prod1.png" alt="" draggable="false" class="carousel__product-card__img">
+                    </a>
+                    <a href="#" class="product-link">
+                        <p class="carousel__product-card__title">Hello</p>
+                    </a>
+                    <p class="carousel__product-card__price">720</p>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
     </section>
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/slider.js" defer></script>
 </body>
 </html>

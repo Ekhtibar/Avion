@@ -1,61 +1,92 @@
-// .slider{
-//     display: flex;
-//     gap: 20px;
-//     overflow-x: scroll;
-// }
-// .slider-box{
-//     overflow-x: scroll;
-//     scroll-snap-type: mandatory;
-//     display: flex;
-//     gap: 20px
-// }
-// ::-webkit-scrollbar {
-//     width: 0;
-// }
-// .box{
-//     width: 700px;
-//     height: 200px;
-//     background: red;
-//     cursor: grab;
-// }
 
-
-
-
-
-
-.slider {
-    display: flex;
-    overflow-x: auto;
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
     gap: 20px;
+    overflow: hidden;
+    width: 100%;
 }
-#slider{
-    padding: 20px 24px 24px 24px;
-    position: relative;
+.carousel {
+    max-width: 100%;
+    grid-auto-columns: calc((100% / 3.5) - 12px);
+    list-style: none;
+    scroll-behavior: smooth;
+    margin-bottom: 50px
+}
+.carousel.dragging{
+    scroll-behavior: auto;
 }
 
-.slider-box {
-    scroll-snap-type: x mandatory;
+.carousel__product-card__img{
+    width: 100%;
+}
+.carousel__product-card__title{
+    font-family: 'Satoshi', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    overflow-x: hidden;
+}
+.carousel__product-card__price{
+    font-family: 'Satoshi', sans-serif;
+    font-size: 18px;
+
+}
+i{
+    height: 50px;
+    width: 50px;
+    background: rgba(238, 238, 238, 0.648);
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%, 50%);
+}
+i:first-child{
+    left: 5px;
     display: flex;
-    gap: 20px;
-    flex-wrap: nowrap;
-    position: relative;
+    justify-content: center;
+    align-items: center;
 }
-
-.slider_card {
-    flex: 0 0 auto; 
-    max-width: 320px; 
-
+i:last-child{
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 ::-webkit-scrollbar {
-    display: none;
+    width: 0;
+}
+@media (max-width: 768px){
+    .carousel {
+        grid-auto-columns: calc((100% / 2.5) - 12px);
+    }
+    .wrapper .carousel{
+        gap: 10px;
+        overflow-x: scroll;
+    }
+    i:last-child,
+    i:first-child{
+        display: none;
+    }
+}
+@media (max-width: 480px){
+    .carousel {
+        grid-auto-columns: calc((100% / 1.5) - 12px);
+    }
+    .fa-solid{
+        display: none;
+    }
 }
 
-
-@media (max-width: 480px){
-    .slider_card {
-        flex: 0 0 auto; 
-        max-width: 220px; 
-        user-select: none;
+@media (max-width: 360px){
+    .carousel__product-card__title{
+        font-size: 18px;
+    }
+    .carousel__product-card__price{
+        font-size: 16px;
     }
 }
