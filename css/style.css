@@ -395,20 +395,123 @@ a {
 
 .slider {
   display: flex;
+  overflow-x: auto;
   gap: 20px;
-  padding: 20px 0px 20px 0px;
-  overflow-x: scroll;
+}
+
+#slider {
+  padding: 20px 24px 24px 24px;
+  position: relative;
 }
 
 .slider-box {
-  scroll-snap-type: mandatory;
+  scroll-snap-type: x mandatory;
   display: flex;
   gap: 20px;
+  flex-wrap: nowrap;
+  position: relative;
 }
 
-.box {
-  width: 700px;
-  height: 200px;
-  background: red;
-  cursor: grab;
+.slider_card {
+  flex: 0 0 auto;
+  max-width: 320px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .slider_card {
+    flex: 0 0 auto;
+    max-width: 220px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+}
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
