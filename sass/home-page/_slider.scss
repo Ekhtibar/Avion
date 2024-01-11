@@ -1,0 +1,18 @@
+.slider{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0px 20px 0px
+}
+.slider-box{
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+    display: flex;
+    gap: 20px
+}
+    
+.box{
+    width: 700px;
+    height: 200px;
+    background: red;
+    cursor: grab;
+}
