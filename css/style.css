@@ -340,26 +340,15 @@ a {
 .listing__one {
   padding: 80px 0px 80px 0px;
 }
+
 .listing__one__products-wrap {
   display: flex;
   gap: 20px;
 }
+
 .listing__one__products-wrap__product-card {
   width: 100%;
-}
-
-.product__card__img {
-  width: 100%;
-  margin-bottom: 25px;
-}
-.product__card__title {
-  font-family: "Satoshi", sans-serif;
-  font-size: 20px;
-}
-.product__card__price {
-  font-family: "Satoshi", sans-serif;
-  font-size: 18px;
-  margin-top: 5px;
+  overflow: hidden;
 }
 
 .section-title {
@@ -368,31 +357,40 @@ a {
   margin-bottom: 30px;
 }
 
+.product__card__title {
+  font-family: "Satoshi", sans-serif;
+  font-size: 20px;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  overflow-x: hidden;
+}
+
+.product__card__price {
+  font-family: "Satoshi", sans-serif;
+  font-size: 18px;
+}
+
 @media (max-width: 768px) {
   .listing__one {
-    padding: 50px 0px 50px 0px;
+    padding: 80px 0px 80px 0px;
   }
   .listing__one__products-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .listing__one__products-wrap__product-card {
-    width: 100%;
+}
+@media (max-width: 360px) {
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 15px;
   }
 }
-.section-title {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
 .product__card__img {
   width: 100%;
   margin-bottom: 0px;
 }
-.product__card__title {
-  font-family: "Satoshi", sans-serif;
-  font-size: 18px;
-}
+
 .product__card__price {
   font-family: "Satoshi", sans-serif;
   font-size: 16px;
@@ -503,8 +501,9 @@ i:last-child {
   }
 }
 .content-join-form {
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0px 100px 0px;
   display: block;
+  background: #F9F9F9;
 }
 
 .content-join-form__inner {
@@ -575,5 +574,67 @@ i:last-child {
     font-size: 14px;
     text-align: left;
     padding: 0px;
+  }
+}
+.bottom-features__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.bottom-features__inner__left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 70px 0px 0px 0px;
+  position: relative;
+}
+
+.bottom-features__title {
+  font-family: "ClashDisplay-Light";
+  font-size: 24px;
+}
+
+.bottom-features__description {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.bottom-features__btn {
+  margin: auto 0;
+  padding: 16px 32px;
+  background: #f5f5f5;
+  border: none;
+  color: #2A254B;
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 65px;
+}
+
+.bottom-features__img {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .bottom-features__inner__left-side {
+    padding: 40px 0px 0px 0px;
+  }
+  .bottom-features__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+  .bottom-features__title {
+    font-size: 20px;
+  }
+  .bottom-features__description {
+    font-size: 14px;
+  }
+  .bottom-features__img {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
