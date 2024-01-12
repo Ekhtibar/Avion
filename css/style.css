@@ -146,6 +146,10 @@ a {
     transform: translateX(-120%);
     transition: 300ms;
     border-bottom-right-radius: 20px;
+    z-index: 999;
+  }
+  .navbar_item {
+    font-size: 20px;
   }
   .menu-active {
     transform: translateX(-20%);
@@ -378,12 +382,12 @@ a {
 }
 .section-title {
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .product__card__img {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 .product__card__title {
   font-family: "Satoshi", sans-serif;
@@ -496,5 +500,80 @@ i:last-child {
   }
   .carousel__product-card__price {
     font-size: 16px;
+  }
+}
+.content-join-form {
+  padding: 50px 0px 50px 0px;
+  display: block;
+}
+
+.content-join-form__inner {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.content-join-form__title {
+  font-family: "ClashDisplay-Light";
+  font-size: 36px;
+  text-align: center;
+}
+
+.content-join-form__description {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 0px 40px 0px 40px;
+  text-align: center;
+}
+
+.join-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.join-input {
+  padding: 17px 32px 17px 20px;
+  border: none;
+  background: #efefef;
+  outline: none;
+  width: 420px;
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+}
+
+.sign-up {
+  padding: 16px 32px;
+  border: none;
+  outline: none;
+  background: #2A254B;
+  color: white;
+  text-wrap: nowrap;
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .join-form {
+    margin-top: 60px;
+  }
+  .join-input {
+    width: 100%;
+    font-size: 14px;
+  }
+  .sign-up {
+    font-size: 14px;
+  }
+  .content-join-form__title {
+    font-size: 20px;
+    text-align: left;
+  }
+  .content-join-form__description {
+    font-size: 14px;
+    text-align: left;
+    padding: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
