@@ -638,4 +638,135 @@ i:last-child {
   .bottom-features__img {
     width: 100%;
   }
+}
+.footer {
+  background: #2A254B;
+  padding: 55px 0px 25px 0px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  flex-wrap: nowrap;
+}
+
+.footer__left-side {
+  width: 100%;
+  color: #fff;
+}
+
+.footer-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 75px;
+  flex-wrap: wrap;
+}
+
+.footer-menu {
+  display: block;
+  list-style: none;
+}
+
+.menu-title {
+  font-family: "ClashDisplay-Light";
+  font-size: 16px;
+}
+
+.footer-menu__item {
+  padding: 12px 0px 12px 0px;
+  font-family: "Satoshi", sans-serif;
+  font-size: 14px;
+}
+
+.footer__right-side {
+  display: block;
+}
+
+.mail-text {
+  font-family: "ClashDisplay-Light";
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer__join-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__join-input {
+  padding: 17px 32px 17px 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  outline: none;
+  max-width: 100%;
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer__sign-up {
+  padding: 14px 28px;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #2A254B;
+  text-wrap: nowrap;
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background: #4E4D93;
+  margin: 35px 0px 25px 0px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-text {
+  font-family: "Satoshi", sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .footer__join-input {
+    width: 100%;
+  }
+  .footer-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 65px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 480px) {
+  .footer-bottom {
+    justify-content: center;
+  }
+  .social-link {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
