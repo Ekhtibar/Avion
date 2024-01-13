@@ -365,9 +365,22 @@ a {
   width: 100%;
 }
 
+.view-collection-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border: none;
+  font-size: 16px;
+  font-family: "Satoshi", sans-serif;
+  cursor: pointer;
+  margin-top: 45px;
+}
+
 @media (max-width: 768px) {
   .listing__one {
-    padding: 80px 0px 80px 0px;
+    padding: 50px 0px 50px 0px;
   }
   .listing__one__products-wrap {
     display: grid;
@@ -379,6 +392,9 @@ a {
     font-family: "ClashDisplay-Light";
     font-size: 20px;
     margin-bottom: 15px;
+  }
+  .view-collection-btn {
+    width: 100%;
   }
 }
 @media (max-width: 360px) {
