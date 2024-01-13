@@ -353,7 +353,7 @@ a {
 
 .section-title {
   font-family: "ClashDisplay-Light";
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 30px;
 }
 
@@ -380,22 +380,23 @@ a {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .section-title {
-    font-size: 24px;
+    font-family: "ClashDisplay-Light";
+    font-size: 20px;
     margin-bottom: 15px;
   }
 }
-.product__card__img {
-  width: 100%;
-  margin-bottom: 0px;
+@media (max-width: 360px) {
+  .product__card__img {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .product__card__price {
+    font-family: "Satoshi", sans-serif;
+    font-size: 16px;
+  }
 }
-
-.product__card__price {
-  font-family: "Satoshi", sans-serif;
-  font-size: 16px;
-}
-
 .wrapper .carousel {
   display: grid;
   grid-auto-flow: column;
