@@ -48,7 +48,7 @@ a {
 }
 
 .header__icons {
-  width: 20px;
+  width: 25px;
   height: auto;
   cursor: pointer;
 }
@@ -71,6 +71,11 @@ a {
 .basket-and-profil {
   display: flex;
   gap: 10px;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
 }
 
 .menu-button__icon,
