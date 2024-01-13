@@ -371,6 +371,10 @@ a {
   font-size: 18px;
 }
 
+.product__card__img {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .listing__one {
     padding: 80px 0px 80px 0px;
