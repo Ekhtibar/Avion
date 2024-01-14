@@ -1,3 +1,7 @@
+.menu-button__icon,
+.x-icon{
+    display: none;
+}
 .header__top{
     display: flex;
     justify-content: space-between;
@@ -38,10 +42,6 @@
 .menu-button{
     display: flex;
     align-items: center;
-}
-.menu-button__icon,
-.x-icon{
-    display: none;
 }
 .menu-profil,
 .menu-cart{

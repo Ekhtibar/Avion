@@ -29,6 +29,11 @@ a {
   font-weight: 300;
   font-style: normal;
 }
+.menu-button__icon,
+.x-icon {
+  display: none;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -76,11 +81,6 @@ a {
 .menu-button {
   display: flex;
   align-items: center;
-}
-
-.menu-button__icon,
-.x-icon {
-  display: none;
 }
 
 .menu-profil,
@@ -783,7 +783,6 @@ i:last-child {
 }
 .product {
   padding: 50px 0px 50px 0px;
-  background: #F9F9F9;
 }
 
 .product-container {
@@ -899,6 +898,14 @@ i:last-child {
 .quantity__number {
   font-family: "Satoshi", sans-serif;
   font-size: 18px;
+  background: none;
+  border: none;
+  width: 1%;
+  padding: 0px;
+  border-left: 0;
+  border-right: 0;
+  width: 35px;
+  text-align: center;
 }
 
 .add-buttons {

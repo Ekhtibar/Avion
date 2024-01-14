@@ -23,3 +23,18 @@ $(document).ready(function () {
 
 
 
+
+
+// stepper
+
+$(document).ready(function() {
+    $(".minus").on("click", function() {
+       $(".quantity__number").val(parseInt($(".quantity__number").val())-1);
+    }); 
+    $(".plus").on("click", function() {
+       $(".quantity__number").val(parseInt($(".quantity__number").val())+1);
+    }); 
+ }); 
+
+
+
