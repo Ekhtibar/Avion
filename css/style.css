@@ -998,7 +998,7 @@ i:last-child {
     font-size: 32px;
   }
   .features_two__inner {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 360px) {
