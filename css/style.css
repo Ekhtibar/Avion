@@ -1010,7 +1010,7 @@ i:last-child {
   }
 }
 .about-page-form {
-  background: url("/images/form_bg.png");
+  background: url("../images/form_bg.png");
 }
 
 .about-page-form__inner {
