@@ -1,0 +1,30 @@
+.about-page-form{
+    background: url("/images/form_bg.png");
+}
+.about-page-form__inner{
+    color: #fff;
+}
+.benefits{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 30px;
+}
+.benefit-col{
+    display: flex;
+    gap: 8px;
+}
+.benefit-txt{
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width: 480px){
+    .benefits{
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }
+}

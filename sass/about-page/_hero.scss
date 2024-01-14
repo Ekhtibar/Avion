@@ -1,0 +1,32 @@
+.hero-container{
+    padding: 65px 25px 80px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__title{
+    font-family: 'ClashDisplay-Light';
+    font-size: 36px;
+    text-align: center;
+    max-width: 700px;
+}
+.features_two__inner{
+    flex-direction: row-reverse;
+}
+@media (max-width: 648px){
+    .hero__title{
+        text-align: left;
+        font-size: 32px;
+    }
+    .features_two__inner{
+        flex-direction: column;
+    }
+}
+@media (max-width: 360px){
+    .hero-container{
+        padding: 45px 25px 5px 25px;
+    }
+    .hero__title{
+        font-size: 24px;
+    }
+}
